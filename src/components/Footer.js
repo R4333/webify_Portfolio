@@ -14,10 +14,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Talha Turab</h3>
+          <h3>Designed and Developed by Tallha Waheed</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} TT</h3>
+          <h3>Copyright © {year} TW</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -43,7 +43,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/tallha-waheed-254257115/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

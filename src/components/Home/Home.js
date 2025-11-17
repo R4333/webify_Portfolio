@@ -30,7 +30,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Talha Turab </strong>
+                <strong className="main-name"> Tallha Waheed </strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -81,7 +81,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/tallha-waheed-254257115/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

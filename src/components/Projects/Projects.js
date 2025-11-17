@@ -8,6 +8,9 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import coversa from "../../Assets/Projects/conversaiq.png";
+import thalamus from "../../Assets/Projects/thalamusai.png";
+import contractReview from "../../Assets/Projects/frcm.png";
 
 function Projects() {
   return (
@@ -21,6 +24,50 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+
+
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={coversa}
+              isBlog={false}
+              title="CoversaIQ"
+              description={
+                "CoversaIQ is a platform that leverages LLMs and automated transcription to help call center and sales agents improve performance. It offers intelligent summarization, agent assist, and SLA tracking to increase conversion and shorten call handling time."
+              }
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={thalamus}
+              isBlog={false}
+              title="Thalamus"
+              description={
+                "Thalamus is a Retrieval-Augmented Generation (RAG) pipeline platform that integrates vector search, knowledge indexing, and LLM orchestration for fast, context-aware AI applications."
+              }
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={contractReview}
+              isBlog={false}
+              title="First Rule — Contract Manager"
+              description={
+                "AI-Powered Contract Review for Construction: Save time, protect margins, and reduce risk with industry-trained, AI-powered contract review, management and built-in training — designed specifically for the way construction teams work."
+              }
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
@@ -87,6 +134,7 @@ function Projects() {
               demoLink=""
             />
           </Col>
+
         </Row>
       </Container>
     </Container>
