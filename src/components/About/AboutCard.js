@@ -8,81 +8,90 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Tallha Waheed</span> — an{" "}
-            <strong>AI consultant & Machine Learning Engineer</strong> based in{" "}
-            <span className="purple">Sterling, Virginia</span>.
-            I help companies turn <span className="purple">LLMs, RAG, and AI agents</span>{" "}
-            into production-grade products and internal tools. I lead a small
-            team so we can cover architecture, POCs, and production deployments
-            end-to-end.
+            I’m <span className="purple">Tallha Waheed</span>, an{" "}
+            <strong>AI consultant & ML Engineer</strong> in{" "}
+            <span className="purple">Sterling, Virginia</span> building{" "}
+            <span className="purple">LLMs, RAG, and agentic workflows</span> that
+            stay reliable in production.
           </p>
 
+          <div className="about-badges" style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginBottom: "12px" }}>
+            {["LLM Systems", "RAG", "Agents", "Voice AI"].map((label) => (
+              <span
+                key={label}
+                style={{
+                  background: "rgba(155, 126, 172, 0.15)",
+                  border: "1px solid rgba(155, 126, 172, 0.35)",
+                  color: "#fff",
+                  padding: "6px 10px",
+                  borderRadius: "12px",
+                  fontSize: "0.85rem",
+                }}
+              >
+                {label}
+              </span>
+            ))}
+          </div>
+
           <p style={{ textAlign: "justify" }}>
-            <strong>What I can help with:</strong>
+            <strong>What I do</strong>
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Design & implementation of LLM / RAG systems (retrieval pipelines, vector DBs, evaluation)
+              <ImPointRight /> RAG pipelines with vector search + rerankers
             </li>
             <li className="about-activity">
-              <ImPointRight /> AI agents for workflow automation, tool-calling, and API integrations
+              <ImPointRight /> Agentic workflows with tool-calling + APIs
             </li>
             <li className="about-activity">
-              <ImPointRight /> Integrating OpenAI / other LLMs into apps, backends, CRMs, and support tools
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Architecture reviews, technical roadmaps, and AI strategy
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Prototyping/MVPs for new AI features or internal copilots
+              <ImPointRight /> Voice/chat copilots mixing OpenAI, Gemini, Deepgram
             </li>
           </ul>
 
           <p style={{ textAlign: "justify" }}>
-            <strong>How I work:</strong>
+            <strong>How I work</strong>
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Project-based consulting & implementation
+              <ImPointRight /> End-to-end builds (architecture → POC → launch)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Ongoing technical advisory (a few hours per week)
+              <ImPointRight /> Advisory blocks for AI strategy and roadmaps
             </li>
             <li className="about-activity">
-              <ImPointRight /> Independent contractor / staff-augmentation for AI/LLM teams
+              <ImPointRight /> Staff-aug ML engineer for AI/LLM teams
             </li>
           </ul>
 
           <p style={{ textAlign: "justify" }}>
-            <strong>Recent experience:</strong>
+            <strong>Experience</strong>
           </p>
           <ul>
             <li>
-              <span className="purple">Self-employed</span> — Founder & Lead AI Consultant (Jan 2025 - Present)
+              <span className="purple">Self-employed</span> — Lead AI Consultant (2025–Now)
             </li>
             <li>
-              <span className="purple">Accenture</span> — Sr. Machine Learning Engineer (Jun 2022 - May 2025)
+              <span className="purple">Accenture</span> — Sr. ML Engineer (2022–2025)
             </li>
             <li>
-              <span className="purple">Dropbox</span> — Machine Learning Engineer (Mar 2019 - Jun 2022)
+              <span className="purple">Dropbox</span> — ML Engineer (2019–2022)
             </li>
             <li>
-              <span className="purple">Incedo Inc.</span> — Data Scientist (May 2016 - Feb 2019)
+              <span className="purple">Incedo</span> — Data Scientist (2016–2019)
             </li>
           </ul>
 
           <p style={{ textAlign: "justify" }}>
             <strong>Top skills:</strong> Data Structures · Big Data · Decision Sciences
             <br />
-            If you’re exploring an AI project, email me at{" "}
-            <a href="mailto:devtallhawaheed@gmail.com">devtallhawaheed@gmail.com</a>{" "}
-            or connect on LinkedIn.
+            <strong>Contact:</strong>{" "}
+            <a href="mailto:devtallhawaheed@gmail.com">devtallhawaheed@gmail.com</a>
           </p>
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Ship AI that is reliable, fast, and useful."
           </p>
-            <footer className="blockquote-footer">Tallha Waheed</footer>
+          <footer className="blockquote-footer">Tallha Waheed</footer>
         </blockquote>
       </Card.Body>
     </Card>

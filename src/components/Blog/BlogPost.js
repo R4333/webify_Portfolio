@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col, Button, Spinner } from "react-bootstrap";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
-import { blogPosts } from "../../data/blogs";
+import { loadBlogs } from "../../utils/blogLoader";
 
 function BlogPost() {
   const { slug } = useParams();
@@ -12,32 +12,51 @@ function BlogPost() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    try {
-      setLoading(true);
-      const foundPost = blogPosts.find((post) => post.slug === slug);
+    let isMounted = true;
 
-      if (!foundPost) {
-        setError("Blog post not found");
-        return;
+    async function fetchPost() {
+      try {
+        setLoading(true);
+        const posts = await loadBlogs();
+        if (!isMounted) return;
+
+        const foundPost = posts.find((item) => item.slug === slug);
+
+        if (!foundPost) {
+          setError("Blog post not found");
+          setPost(null);
+          return;
+        }
+
+        const html = marked(foundPost.content);
+        const sanitizedHtml = DOMPurify.sanitize(html);
+
+        setPost({
+          title: foundPost.title,
+          author: foundPost.author,
+          date: foundPost.date,
+          thumbnail: foundPost.thumbnail,
+          content: sanitizedHtml,
+        });
+        setError(null);
+      } catch (err) {
+        console.error(err);
+        if (isMounted) {
+          setError("Error loading blog post");
+          setPost(null);
+        }
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+        }
       }
-
-      const html = marked(foundPost.content);
-      const sanitizedHtml = DOMPurify.sanitize(html);
-
-      setPost({
-        title: foundPost.title,
-        author: foundPost.author,
-        date: foundPost.date,
-        thumbnail: foundPost.thumbnail,
-        content: sanitizedHtml,
-      });
-      setError(null);
-    } catch (err) {
-      setError("Error loading blog post");
-      console.error(err);
-    } finally {
-      setLoading(false);
     }
+
+    fetchPost();
+
+    return () => {
+      isMounted = false;
+    };
   }, [slug]);
 
   if (loading) {

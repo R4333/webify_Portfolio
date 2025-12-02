@@ -2,15 +2,16 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import blog from "../../Assets/Projects/blog.png";
+import editor from "../../Assets/Projects/codeEditor.png";
 import coversa from "../../Assets/Projects/conversaiq.png";
 import thalamus from "../../Assets/Projects/thalamusai.png";
 import contractReview from "../../Assets/Projects/frcm.png";
+import emotion from "../../Assets/Projects/emotion.png";
+
+const creditScoringImg =
+  "https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1200&q=80";
 
 function Projects() {
   return (
@@ -25,9 +26,14 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-
-
-
+          <Col md={12} style={{ marginBottom: "20px" }}>
+            <h3 className="purple" style={{ marginBottom: "8px" }}>
+              AI Platforms & Pipelines
+            </h3>
+            <p style={{ color: "white", marginBottom: 0 }}>
+              End-to-end systems for LLM apps, RAG, and industry-tuned workflows.
+            </p>
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -68,12 +74,33 @@ function Projects() {
             />
           </Col>
 
+          <Col md={12} style={{ margin: "30px 0 20px" }}>
+            <h3 className="purple" style={{ marginBottom: "8px" }}>
+              Automation, Intelligence & Risk
+            </h3>
+            <p style={{ color: "white", marginBottom: 0 }}>
+              Agentic workflows, voice AI, OCR, and predictive modeling that ship to production.
+            </p>
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="AI Voice System"
+              description={
+                <>
+                  <strong>
+                    Live test line:{" "}
+                    <a href="tel:+19729450560">+1 972-945-0560</a>
+                  </strong>
+                  . Architected an AI voice system with Twilio WebSockets,
+                  custom VAD, and NER models to drop conversational latency from
+                  7s to under 2s while cutting costs by 95%. Leverages OpenAI’s
+                  GPT-Realtime with pluggable support for Gemini, OpenAI, and
+                  Deepgram models to mix ASR, reasoning, and synthesis pipelines.
+                </>
+              }
               ghLink=""
               demoLink=""
             />
@@ -81,10 +108,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={blog}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Agentic Resume Screener"
+              description="Built a LangChain/LangGraph workflow with OCR ingestion to automate resume analysis, scoring, and recommendations for recruiting teams."
               ghLink=""
               demoLink=""
             />
@@ -94,8 +121,8 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Document Retrieval & OCR Automation"
+              description="Developed hybrid search with Docling, LlamaParser, and Mistral OCR to accelerate document indexing, extraction, and grounded responses for operations teams."
               ghLink=""
               demoLink=""              
             />
@@ -103,23 +130,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={creditScoringImg}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="Credit Scoring Model"
+              description="Built a production-grade credit scoring model using XGBoost/CatBoost with explainability reporting, reaching 95% accuracy on delinquency prediction."
               ghLink=""
               demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink=""
-              demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" 
             />
           </Col>
 
@@ -127,14 +143,12 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Content Safety & Recommendations"
+              description="Engineered transformer vision + YOLO workflows for short-form video moderation (85% reduction in harmful content) and a recommendation engine that boosted engagement by 50%."
               ghLink=""
-              demoLink=""
+              demoLink=""              
             />
           </Col>
-
         </Row>
       </Container>
     </Container>

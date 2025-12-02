@@ -1,18 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import BlogCard from "./BlogCard";
-import { blogPosts } from "../../data/blogs";
+import { loadBlogs } from "../../utils/blogLoader";
 
 function Blog() {
-  const [blogs, setBlogs] = useState(blogPosts.map((post) => ({
-    slug: post.slug,
-    title: post.title,
-    author: post.author,
-    date: post.date,
-    description: post.description,
-    thumbnail: post.thumbnail,
-  })).sort((a, b) => new Date(b.date) - new Date(a.date)));
+  const [blogs, setBlogs] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function fetchBlogs() {
+      try {
+        const posts = await loadBlogs();
+        if (!isMounted) return;
+
+        setBlogs(
+          posts.map((post) => ({
+            slug: post.slug,
+            title: post.title,
+            author: post.author,
+            date: post.date,
+            description: post.description,
+            thumbnail: post.thumbnail,
+          }))
+        );
+        setError(null);
+      } catch (err) {
+        console.error("Error loading blogs", err);
+        if (isMounted) {
+          setError("Unable to load blogs right now.");
+        }
+      }
+    }
+
+    fetchBlogs();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <Container fluid className="blog-section">
@@ -32,9 +60,13 @@ function Blog() {
         {blogs.length === 0 ? (
           <Row className="justify-content-center">
             <Col md={12} className="text-center">
-              <p className="project-description">
-                No blog posts yet. Check back soon!
-              </p>
+              {error ? (
+                <p className="project-description text-danger">{error}</p>
+              ) : (
+                <p className="project-description">
+                  No blog posts yet. Check back soon!
+                </p>
+              )}
             </Col>
           </Row>
         ) : (

@@ -13,38 +13,32 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer and Sr. Machine Learning Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m an AI consultant and Machine Learning Engineer (ex-Accenture)
+              who helps product teams ship LLM, RAG, and AI agent solutions.
+              I partner with founders, product leads, and engineering managers
+              to turn AI ideas into reliable features and internal tools.
               <br />
               <br />
               I’m proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, Typescript, Python, and Node.js{" "}
+                  Python, JavaScript/TypeScript, and Node.js{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — with a focus on data engineering, backend services, and cloud
+              deployments that keep AI systems fast and dependable.
               <br />
               <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, and AI/ML systems,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              My key areas of interest include designing
+              <b className="purple"> retrieval pipelines, vector search,</b>{" "}
+              and <b className="purple">agentic workflows</b> that automate
+              complex processes.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js and Python </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              I lead a small team so we can cover end-to-end delivery—from
+              architecture and POCs to production-grade deployments. If you’re
+              exploring an AI project, let’s build it.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
