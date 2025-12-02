@@ -52,7 +52,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
 
       <Container className="home-stats-container">
         <Row className="about-story-row">
@@ -82,6 +81,8 @@ function Home() {
           </Col>
         </Row>
       </Container>
+
+      <Home2 />
 
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
