@@ -6,11 +6,11 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "AI Consultant & ML Engineer",
-          "RAG & AI Agents",
-          "Generative AI Systems",
-          "Prompt Engineering",
-          "Production-Grade GenAI",
+          "Sr. Machine Learning Engineer",
+          "LangChain / LangGraph",
+          "LLaMA Fine-Tuning (LoRA/PEFT)",
+          "FastAPI Microservices",
+          "Hybrid RAG & Evaluation",
         ],
         autoStart: true,
         loop: true,

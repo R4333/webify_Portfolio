@@ -1,6 +1,6 @@
 ---
 title: Building Responsive Layouts with Bootstrap
-author: Tallha Waheed
+author: Talha Turab
 date: 2024-11-05
 description: Master Bootstrap's grid system and create beautiful responsive layouts.
 thumbnail: 

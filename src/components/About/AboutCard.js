@@ -8,15 +8,16 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            I’m <span className="purple">Tallha Waheed</span>, an{" "}
-            <strong>AI consultant & ML Engineer</strong> in{" "}
-            <span className="purple">Sterling, Virginia</span> building{" "}
-            <span className="purple">LLMs, RAG, and agentic workflows</span> that
-            stay reliable in production.
+            I’m <span className="purple">Talha Turab</span>, a{" "}
+            <strong>Senior Machine Learning Engineer</strong> based in{" "}
+            <span className="purple">Lahore, Pakistan</span> specializing in{" "}
+            <span className="purple">Generative AI, NLP/NLU, LLMs, and data science</span>.
+            I build production systems end-to-end—credit scoring, RAG and agentic workflows,
+            content safety, and recommendation engines.
           </p>
 
           <div className="about-badges" style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginBottom: "12px" }}>
-            {["LLM Systems", "RAG", "Agents", "Voice AI"].map((label) => (
+            {["LangChain / LangGraph", "LLaMA fine-tuning (LoRA/PEFT)", "FastAPI", "Hybrid RAG"].map((label) => (
               <span
                 key={label}
                 style={{
@@ -34,32 +35,32 @@ function AboutCard() {
           </div>
 
           <p style={{ textAlign: "justify" }}>
-            <strong>What I do</strong>
+            <strong>Top skills</strong>
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> RAG pipelines with vector search + rerankers
+              <ImPointRight /> LangChain/LangGraph orchestration, agentic workflows, and tool-calling
             </li>
             <li className="about-activity">
-              <ImPointRight /> Agentic workflows with tool-calling + APIs
+              <ImPointRight /> LLaMA/Mistral/DeepSeek tuning with LoRA, PEFT, adapters, and RAG grounding
             </li>
             <li className="about-activity">
-              <ImPointRight /> Voice/chat copilots mixing OpenAI, Gemini, Deepgram
+              <ImPointRight /> FastAPI microservices, hybrid search (vector + rerank), and ML evaluation harnesses
             </li>
           </ul>
 
           <p style={{ textAlign: "justify" }}>
-            <strong>How I work</strong>
+            <strong>Certifications</strong>
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> End-to-end builds (architecture → POC → launch)
+              <ImPointRight /> Graph Search, Shortest Paths, and Data Structures
             </li>
             <li className="about-activity">
-              <ImPointRight /> Advisory blocks for AI strategy and roadmaps
+              <ImPointRight /> React NanoDegree
             </li>
             <li className="about-activity">
-              <ImPointRight /> Staff-aug ML engineer for AI/LLM teams
+              <ImPointRight /> Lumen Microservices
             </li>
           </ul>
 
@@ -67,31 +68,56 @@ function AboutCard() {
             <strong>Experience</strong>
           </p>
           <ul>
-            <li>
-              <span className="purple">Self-employed</span> — Lead AI Consultant (2025–Now)
+            <li className="about-activity">
+              <ImPointRight /> <span className="purple">NETSOL Technologies</span> — Lead ML Engineer (Sep 2023–Present):
+              fine-tuned DeepSeek/Mistral/LLaMA with LoRA/PEFT, built RAG + Neo4j graph workflows,
+              voice agents with Twilio, and AWS/Azure ML pipelines; improved GPT-3 responses 23% vs GPT-4.
             </li>
-            <li>
-              <span className="purple">Accenture</span> — Sr. ML Engineer (2022–2025)
+            <li className="about-activity">
+              <ImPointRight /> <span className="purple">WALEE</span> — Sr. Data Scientist (Aug 2020–Sep 2023):
+              credit scoring for banking (95% accuracy), hybrid search + Docling/LlamaParser pipelines,
+              RLHF time-series underwriting, and content moderation + video recommenders.
             </li>
-            <li>
-              <span className="purple">Dropbox</span> — ML Engineer (2019–2022)
+            <li className="about-activity">
+              <ImPointRight /> <span className="purple">OnRegle / Heuristiks</span> — ML Engineer (Nov 2018–Aug 2020):
+              OCR for PDFs, ETL pipelines, and data gathering via network calls and web scraping.
             </li>
-            <li>
-              <span className="purple">Incedo</span> — Data Scientist (2016–2019)
+            <li className="about-activity">
+              <ImPointRight /> <span className="purple">British Airways</span> — Data Scientist:
+              web-scraped reviews, built TF-IDF insights, and a 97% precision ticket-purchase classifier.
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> <span className="purple">KPMG</span> — Audit Associate:
+              financial reporting, audit oversight, and cost optimization.
             </li>
           </ul>
 
           <p style={{ textAlign: "justify" }}>
-            <strong>Top skills:</strong> Data Structures · Big Data · Decision Sciences
-            <br />
+            <strong>Education</strong>
+          </p>
+          <ul>
+            <li className="about-activity">
+              <ImPointRight /> BS Computer Science — Thomas Edison State University (2015–2019)
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> MS Artificial Intelligence — Lahore University of Management Sciences (2023–2026)
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Data Scientist in Python (Dataquest.io), Data Scientist With Python (DataCamp), Data Analyst (Udacity)
+            </li>
+          </ul>
+
+          <p style={{ textAlign: "justify" }}>
             <strong>Contact:</strong>{" "}
-            <a href="mailto:devtallhawaheed@gmail.com">devtallhawaheed@gmail.com</a>
+            <a href="https://www.linkedin.com/in/talha-turab/" target="_blank" rel="noreferrer">
+              linkedin.com/in/talha-turab
+            </a>
           </p>
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Ship AI that is reliable, fast, and useful."
           </p>
-          <footer className="blockquote-footer">Tallha Waheed</footer>
+          <footer className="blockquote-footer">Talha Turab</footer>
         </blockquote>
       </Card.Body>
     </Card>

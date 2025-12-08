@@ -41,7 +41,7 @@ async function parseBlog(fileKey) {
   return {
     slug,
     title: data.title || slug,
-    author: data.author || "Tallha Waheed",
+    author: data.author || "Talha Turab",
     date: data.date || new Date().toISOString(),
     description: data.description || "",
     thumbnail: data.thumbnail || "",

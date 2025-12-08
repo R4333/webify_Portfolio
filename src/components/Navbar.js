@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo2.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
@@ -11,6 +11,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function NavBar() {
@@ -79,7 +80,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
@@ -87,7 +88,7 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
@@ -101,7 +102,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://www.linkedin.com/in/tallha-waheed-254257115/"
+                href="https://www.linkedin.com/in/talha-turab/"
                 target="_blank"
                 className="fork-btn-inner"
               >

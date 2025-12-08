@@ -1,6 +1,6 @@
 ---
 title: When To Fine-Tune vs Prompt Engineer: A Decision Framework
-author: Tallha Waheed
+author: Talha Turab
 date: 2025-01-02
 description: A practical rubric for choosing between prompt engineering, adapters/LoRA, or full fine-tuning.
 thumbnail:

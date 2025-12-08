@@ -13,32 +13,30 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m an AI consultant and Machine Learning Engineer (ex-Accenture)
-              who helps product teams ship LLM, RAG, and AI agent solutions.
-              I partner with founders, product leads, and engineering managers
-              to turn AI ideas into reliable features and internal tools.
+              I’m a Senior Machine Learning Engineer who designs and ships
+              production-grade Generative AI, NLP/NLU, and data science systems.
+              I partner with business, product, and engineering teams to turn AI
+              concepts into reliable features and platforms.
               <br />
               <br />
               I’m proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  Python, JavaScript/TypeScript, and Node.js{" "}
+                  Python, LangChain/LangGraph, FastAPI, and LLaMA-based stacks{" "}
                 </b>
               </i>
-              — with a focus on data engineering, backend services, and cloud
-              deployments that keep AI systems fast and dependable.
+              — with a focus on RAG pipelines, agentic workflows, hybrid search,
+              and model tuning that keep AI systems fast and dependable.
               <br />
               <br />
-              My key areas of interest include designing
-              <b className="purple"> retrieval pipelines, vector search,</b>{" "}
-              and <b className="purple">agentic workflows</b> that automate
-              complex processes.
+              Recent work includes fine-tuning open-source models with LoRA/PEFT,
+              building LLM evaluation harnesses, integrating voice agents, and
+              optimizing cloud deployments across AWS and Azure.
               <br />
               <br />
-              I lead a small team so we can cover end-to-end delivery—from
-              architecture and POCs to production-grade deployments. If you’re
-              exploring an AI project, let’s build it.
+              If you’re exploring credit scoring, content safety, recommender
+              systems, or agentic copilots, let’s build them together.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

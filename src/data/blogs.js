@@ -2,7 +2,7 @@ export const blogPosts = [
   {
     slug: "getting-started-with-react-hooks",
     title: "Getting Started with React Hooks",
-    author: "Tallha Waheed",
+    author: "Talha Turab",
     date: "2024-11-15",
     description:
       "Learn the basics of React Hooks and how to use them in your functional components.",
@@ -69,7 +69,7 @@ Happy coding!`,
   {
     slug: "web-performance-optimization-tips",
     title: "Web Performance Optimization Tips",
-    author: "Tallha Waheed",
+    author: "Talha Turab",
     date: "2024-11-10",
     description:
       "Essential techniques to improve your website's performance and user experience.",
@@ -151,7 +151,7 @@ Performance optimization is an ongoing process. Start with the most impactful ch
   {
     slug: "building-responsive-layouts-with-bootstrap",
     title: "Building Responsive Layouts with Bootstrap",
-    author: "Tallha Waheed",
+    author: "Talha Turab",
     date: "2024-11-05",
     description:
       "Master Bootstrap's grid system and create beautiful responsive layouts.",
@@ -252,7 +252,7 @@ Bootstrap's grid system makes it easy to build responsive layouts. Master these 
   {
     slug: "introduction-to-machine-learning",
     title: "Introduction to Machine Learning",
-    author: "Tallha Waheed",
+    author: "Talha Turab",
     date: "2024-11-20",
     description:
       "A beginner's guide to understanding machine learning concepts, algorithms, and practical applications in web development.",
@@ -381,5 +381,4 @@ Detect unusual patterns in data for fraud detection and security monitoring.
 Machine learning is a powerful tool that can enhance your web applications with intelligent features. Start small, learn continuously, and gradually build expertise. The future of web development will increasingly involve machine learning!`,
   },
 ];
-
 

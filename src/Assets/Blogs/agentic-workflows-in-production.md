@@ -1,6 +1,6 @@
 ---
 title: Designing Agentic Workflows That Don’t Fall Apart In Production
-author: Tallha Waheed
+author: Talha Turab
 date: 2025-01-04
 description: Patterns for reliable tool-calling and multi-step agents for ops, support, and data teams.
 thumbnail:

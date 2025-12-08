@@ -1,6 +1,6 @@
 ---
 title: Web Performance Optimization Tips
-author: Tallha Waheed
+author: Talha Turab
 date: 2024-11-10
 description: Essential techniques to improve your website's performance and user experience.
 thumbnail: 

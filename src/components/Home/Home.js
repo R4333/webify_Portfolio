@@ -4,10 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import {
-  AiOutlineLink,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiOutlineLink } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
@@ -27,13 +24,14 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Tallha Waheed </strong>
+                <strong className="main-name"> Talha Turab </strong>
               </h1>
 
               <p className="heading-description">
-                AI consultant & Machine Learning Engineer helping companies
-                turn LLMs, RAG, and AI agents into production-grade products
-                and internal tools.
+                Sr. Machine Learning Engineer focused on Generative AI, NLP/NLU, and
+                data science—shipping production LLMs, RAG systems, and voice/chat
+                copilots. Based in Lahore, Pakistan, with hands-on delivery across
+                FastAPI backends, LangChain/LangGraph pipelines, and model tuning.
               </p>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -57,10 +55,10 @@ function Home() {
         <Row className="about-story-row">
           <Col md={12}>
             <div className="about-story-card">
-              <h2>Trusted AI partner for production builds</h2>
+              <h2>Enterprise AI delivered end-to-end</h2>
               <p>
-                I help teams design, build, and scale LLM products that stay reliable
-                after launch—covering retrieval, agentic flows, voice, and safety.
+                Building reliable LLM products—from RAG and agentic workflows to
+                ML-powered credit scoring, content safety, and recommendation engines.
               </p>
             </div>
           </Col>
@@ -95,7 +93,7 @@ function Home() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/tallha-waheed-254257115/"
+                  href="https://www.linkedin.com/in/talha-turab/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -105,20 +103,12 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://tallhawaheed.dev/"
+                  href="https://www.linkedin.com/in/talha-turab/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiOutlineLink />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="mailto:devtallhawaheed@gmail.com"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiOutlineMail />
                 </a>
               </li>
             </ul>

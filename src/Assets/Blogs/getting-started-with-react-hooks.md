@@ -1,6 +1,6 @@
 ---
 title: Getting Started with React Hooks
-author: Tallha Waheed
+author: Talha Turab
 date: 2024-11-15
 description: Learn the basics of React Hooks and how to use them in your functional components.
 thumbnail: 

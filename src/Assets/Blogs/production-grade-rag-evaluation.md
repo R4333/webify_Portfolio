@@ -1,6 +1,6 @@
 ---
 title: Production-Grade RAG Evaluation That Actually Catches Failures
-author: Tallha Waheed
+author: Talha Turab
 date: 2025-01-06
 description: A pragmatic framework for evaluating Retrieval-Augmented Generation systems in production, beyond toy metrics.
 thumbnail:
